@@ -1,3 +1,19 @@
+/*
+==========================================
+Project : Mutual Fund Management System
+File    : 01_database_and_tables.sql
+
+Author  : Kumar Utkarsh
+
+Description:
+This file creates the database,
+tables, constraints, and inserts
+sample data.
+==========================================
+*/
+
+
+
 CREATE DATABASE MUTUALFUNDDB;
 
 USE MUTUALFUNDDB;
@@ -103,6 +119,7 @@ REFERENCES FUNDCATEGORY(CATEGORYID)
 SELECT * 
 FROM MUTUALFUNDS;
 
+
 INSERT INTO MUTUALFUNDS
 (FundID, FundName, AMCID, CategoryID, LaunchDate, MinimumInvestment, ExpenseRatio, ExitLoad, CurrentNAV)
 VALUES
@@ -127,7 +144,7 @@ VALUES
 (2010, 'Axis Hybrid Fund', 105, 3, '2012-11-20', 500, 0.68, 1.00, 41.80);
 
 CREATE TABLE TRANSACTIONS(
-TransactionID BIGINT,
+TransactionID BIGINT PRIMARY KEY,
 InvestorID INT,
 FundID BIGINT,
 -- TransactionType ENUM('BUY','SELL','SIP')
@@ -172,6 +189,8 @@ VALUES
 (3009,1009,2009,'BUY',5000,204.08,24.50,'2026-08-03'),
 
 (3010,1010,2010,'BUY',7000,167.46,41.80,'2026-08-03');
+
+
 
 
 

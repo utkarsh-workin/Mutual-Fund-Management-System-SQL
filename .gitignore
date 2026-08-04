@@ -1,0 +1,5 @@
+# VS Code settings
+.vscode/
+
+# MySQL Workbench session files
+*.session.sql
