@@ -120,6 +120,8 @@ SELECT *
 FROM Investors
 ORDER BY FullName ASC;
 
+
+
 -- Show mutual funds by highest Current NAV.
 
 SELECT *
