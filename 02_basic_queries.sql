@@ -201,13 +201,13 @@ UPDATE Clause
 
 UPDATE Investors
 SET City = 'Noida'
-WHERE FullName = 'Rahul Sharma';
+WHERE InvestorID = 1002;
 
 -- Update the email of Kumar Utkarsh.
 
 UPDATE Investors
 SET Email = 'utkarsh.work@gmail.com'
-WHERE FullName = 'Kumar Utkarsh';
+WHERE InvestorID = 1001;
 
 -- Update the city and state of InvestorID 1005.
 
